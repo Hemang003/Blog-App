@@ -57,3 +57,78 @@ html{
 .navLink.active{
   color: var(--purple-600);
 }
+
+.sp-text{
+  color: var(--purple-600);
+}
+
+.btnNormal{
+  padding: 10px;
+  min-width: 130px;
+  background-color: var(--purple-600);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: ease-in .3s;
+}
+
+.btnNormal:hover{
+  background-color: var(--purple-700)
+}
+
+.btnWhite{
+  padding: 10px;
+  min-width: 130px;
+  background-color: #f4f4f4;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: ease-in .3s;
+}
+
+.btnNormal:hover{
+  background-color: #fff;
+}
+
+.blogsCon{
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: auto auto auto auto ;
+  grid-gap: 15px;
+  gap: 15px;
+}
+
+.blogsCon .blog{
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  cursor: pointer;
+  transition: ease-in .3s;
+  background-color: var(--bg-2);
+  border-radius: 10px;
+}
+
+.blogsCon .blog:hover{
+  transform: translateY(-3%);
+}
+
+.inputBox{
+  display: flex;
+  align-items: center;
+  background-color: #0c0c0c;
+  border: 1px solid rgb(32, 32, 32);
+  margin-top: 5px;
+}
+
+.inputBox input{
+  flex: 1;
+  border-radius: 5px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 10px;
+  color: #fff;
+  border-radius: 5px;
+}
