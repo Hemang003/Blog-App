@@ -8,7 +8,7 @@ const SignUp = () => {
     const [email, setEmail] = useState("");
     const [pwd, setPwd] = useState("");
 
-    const [error, setError] = uEeState("");
+    const [error, setError] = useState("");
 
 
     const submitForm = (e) => {
