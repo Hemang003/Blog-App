@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import NoPage from './pages/NoPage';
 import SingleBlog from './pages/SingleBlog';
 import SignUp from './pages/SignUp';
+import Login from './pages/Login';
 
 
 
@@ -16,6 +17,7 @@ const App = () => {
 
           <Route path='/' element={<Home />} />
           <Route path='/signup' element={<SignUp />} />
+          <Route path='/login' element={<Login />} />
           <Route path='/blog2/:blogId' element={<SingleBlog />} />
           <Route path="*" element={<NoPage />} />
 

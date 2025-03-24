@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const SignUp = () => {
     const [username, setUsername] = useState("");
-    const [Name, setName] = useState("");
+    const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [pwd, setPwd] = useState("");
 
@@ -12,7 +12,7 @@ const SignUp = () => {
 
 
     const submitForm = (e) => {
-        e.treventDefault();
+        e.preventDefault();
     }
 
     return (
@@ -23,22 +23,22 @@ const SignUp = () => {
                     <div className='w-full'>
                         <p className='text-[gray] text-[14px] mt-3'>Username</p>
                         <div className="inputBox">
-                            <input type="text" placeholder='Username' required />
+                            <input onChange={(e)=> {setUsername(e.target.value)}} value={username} type="text" placeholder='Username' required />
                         </div>
 
                         <p className='text-[gray] text-[14px] mt-3'>Name</p>
                         <div className="inputBox">
-                            <input type="text" placeholder='Name' required />
+                            <input onChange={(e)=> {setName(e.target.value)}} value={name} type="text" placeholder='Name' required />
                         </div>
 
                         <p className='text-[gray] text-[14px] mt-3'>Email</p>
                         <div className="inputBox">
-                            <input type="email" placeholder='Email' required />
+                            <input onChange={(e)=> {setEmail(e.target.value)}} value={email} type="email" placeholder='Email' required />
                         </div>
 
                         <p className='text-[gray] text-[14px] mt-3'>Password</p>
                         <div className="inputBox">
-                            <input type="password" placeholder='Password' required />
+                            <input onChange={(e)=> {setPwd(e.target.value)}} value={pwd} type="password" placeholder='Password' required />
                         </div>
 
                         <p className='text-[14px] text-[gray] mt-3'>Already have an account <Link to="/login" className='text-purple-600'>Login</Link></p>
